@@ -59,6 +59,7 @@ motion_add(180,random_range(5,10));
             <string>///Fire Missile
 if(speed = 0)
 {
+    audio_play_sound(choose(a_fire1,a_fire2,a_fire3),0,false);
     instance_create(bbox_left,bbox_top,tankmissile);
 }
 alarm[0] = random(room_speed*4);

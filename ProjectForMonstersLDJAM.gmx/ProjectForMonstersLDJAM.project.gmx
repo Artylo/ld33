@@ -4,7 +4,30 @@
     <Config>Configs\Default</Config>
   </Configs>
   <NewExtensions/>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sounds name="SFX">
+      <sound>sound\a_exp1</sound>
+      <sound>sound\a_exp2</sound>
+      <sound>sound\a_exp3</sound>
+      <sound>sound\a_fire1</sound>
+      <sound>sound\a_fire2</sound>
+      <sound>sound\a_fire3</sound>
+      <sound>sound\a_laz1</sound>
+      <sound>sound\a_laz2</sound>
+      <sound>sound\a_laz3</sound>
+      <sound>sound\a_pre1</sound>
+      <sound>sound\a_pre2</sound>
+      <sound>sound\a_lvl1</sound>
+      <sound>sound\a_lvl2</sound>
+      <sound>sound\a_lvl3</sound>
+      <sound>sound\a_death</sound>
+      <sound>sound\a_win</sound>
+    </sounds>
+    <sounds name="Music">
+      <sound>sound\m_title</sound>
+    </sounds>
+    <sound>sound\m_game</sound>
+  </sounds>
   <sprites name="sprites">
     <sprite>sprites\s_monster1</sprite>
     <sprite>sprites\s_laser</sprite>
@@ -16,6 +39,12 @@
     <sprite>sprites\s_aagun</sprite>
     <sprite>sprites\s_tank</sprite>
     <sprite>sprites\s_levelup</sprite>
+    <sprites name="Movies">
+      <sprite>sprites\s_intro</sprite>
+      <sprite>sprites\s_logo</sprite>
+      <sprite>sprites\s_logom</sprite>
+    </sprites>
+    <sprite>sprites\s_token</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg1</background>
@@ -27,27 +56,37 @@
     <script>scripts\room_init.gml</script>
     <script>scripts\mousedir.gml</script>
     <script>scripts\particle.gml</script>
+    <script>scripts\menu_control.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font</font>
   </fonts>
   <objects name="objects">
-    <object>objects\director</object>
-    <object>objects\monster</object>
-    <object>objects\laser</object>
-    <object>objects\civilian</object>
-    <object>objects\missile</object>
-    <object>objects\aamissile</object>
-    <object>objects\tankmissile</object>
-    <object>objects\e_smoke</object>
-    <object>objects\e_explosion</object>
-    <object>objects\aagun</object>
-    <object>objects\tank</object>
-    <object>objects\levelup</object>
+    <objects name="Game">
+      <object>objects\director</object>
+      <object>objects\monster</object>
+      <object>objects\laser</object>
+      <object>objects\levelup</object>
+      <object>objects\tank</object>
+      <object>objects\aagun</object>
+      <object>objects\e_explosion</object>
+      <object>objects\e_smoke</object>
+      <object>objects\tankmissile</object>
+      <object>objects\aamissile</object>
+      <object>objects\missile</object>
+      <object>objects\civilian</object>
+    </objects>
+    <objects name="Menus">
+      <object>objects\menu_director</object>
+      <object>objects\movie_intro</object>
+      <object>objects\logo</object>
+    </objects>
   </objects>
-  <timelines name="timelines"/>
   <rooms name="rooms">
-    <room>rooms\game</room>
+    <room>rooms\r_intro</room>
+    <room>rooms\r_game</room>
+    <room>rooms\r_gameover</room>
+    <room>rooms\r_win</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

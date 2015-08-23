@@ -1,1 +1,10 @@
-repeat(argument2) instance_create(argument0,argument1,argument3);
+/*Controls*/
+
+//Video Kojima
+if(keyboard_check_pressed(ord('F')))
+{
+    if(window_get_fullscreen()) window_set_fullscreen(false);
+    else window_set_fullscreen(true);
+}
+
+

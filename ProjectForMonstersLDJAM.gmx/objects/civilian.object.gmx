@@ -135,6 +135,8 @@ if(point_distance(x,y,view_wview/2,view_hview/2) &gt;= 1280) instance_destroy();
             <kind>1</kind>
             <string>if(sprite_index == s_civilian_die)
 {
+    if(monster.HP + 1 &lt; monster.mHP) monster.HP += 1;
+    else monster.HP = monster.mHP;
     score += 25;
     instance_destroy();
 }

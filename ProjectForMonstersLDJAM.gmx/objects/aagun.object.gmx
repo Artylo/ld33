@@ -55,6 +55,7 @@ depth = -bbox_bottom;
           <argument>
             <kind>1</kind>
             <string>///Fire Missile
+audio_play_sound(choose(a_fire1,a_fire2,a_fire3),0,false);
 instance_create(x,y,aamissile);
 alarm[0] = random(room_speed*4);
 </string>

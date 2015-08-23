@@ -31,6 +31,8 @@ image_index = irandom(image_number);
 scale = random(1);
 direction = random_range(-5,5);
 speed = random_range(1,3);
+
+
 </string>
           </argument>
         </arguments>

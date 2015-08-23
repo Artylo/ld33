@@ -83,10 +83,12 @@ HP = mHP;
             <kind>1</kind>
             <string>///Laser
 
-if(global.M1)
+if(global.M1 and !global.death)
 {
     if(!instance_exists(laser))
     {
+        //audio_play_sound(choose(a_pre1,a_pre2),0,false);
+        audio_play_sound(choose(a_laz1,a_laz2,a_laz3),0,false);
         instance_create(x+ap_x,y+ap_y,laser);
     }
 }
@@ -111,8 +113,38 @@ if(global.M1)
           <argument>
             <kind>1</kind>
             <string>///Misc
-x = view_xview;
-y = view_yview;
+if(!global.death)
+{
+    x = view_xview;
+    y = view_yview;
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Death
+
+if(HP &lt; 1) global.death = true;
+if(global.death)
+{
+    if(bbox_bottom &gt; 0) y--;
+}
 </string>
           </argument>
         </arguments>
