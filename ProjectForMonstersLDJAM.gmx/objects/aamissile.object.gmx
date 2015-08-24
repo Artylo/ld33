@@ -136,7 +136,7 @@ instance_destroy();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(other.HP &gt;= 1)other.HP -= global.level;
+            <string>if(other.HP &gt;= 1)other.HP -= global.level*2;
 particle(x,y,random_range(5,10),e_explosion);
 audio_play_sound(choose(a_exp1,a_exp2,a_exp3),0,false);
 instance_destroy();

@@ -83,7 +83,7 @@ audio_play_sound(m_game,0,true);
             <string>///Missiles
 if(!global.win or !global.death)
 {
-    if(global.level &gt;= 3)
+    if(global.level &gt;= 2)
     {
         repeat(irandom(3))
         {
@@ -95,7 +95,7 @@ if(!global.win or !global.death)
         var chance = irandom(30);
         if(chance &lt;= global.level)instance_create(view_wview+48*2,283+318,aagun);
     }
-    if(global.level &gt;= 10)
+    if(global.level &gt;= 7)
     {
         var chance = irandom(30);
         if(chance &lt;= global.level)instance_create(view_wview+48*2,irandom_range(283*2,318*2),tank);

@@ -36,7 +36,7 @@ ap_x = 253*2;
 ap_y = 58*2;
 
 /*Vitals*/
-mHP = 100;
+mHP = 15;
 HP = mHP;
 </string>
           </argument>
