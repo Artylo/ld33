@@ -84,6 +84,7 @@ alarm[0] = 1;
             <string>particle(x,y,random_range(5,10),e_explosion);
 score += 50;
 audio_play_sound(choose(a_exp1,a_exp2,a_exp3),0,false);
+//shake(room_speed/4,1);
 instance_destroy();
 </string>
           </argument>
@@ -110,6 +111,7 @@ instance_destroy();
             <string>if(other.HP &gt;= 1)other.HP -= global.level*4;
 particle(x,y,random_range(5,10),e_explosion);
 audio_play_sound(choose(a_exp1,a_exp2,a_exp3),0,false);
+shake(room_speed/2,4);
 instance_destroy();
 </string>
           </argument>

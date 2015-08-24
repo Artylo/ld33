@@ -116,6 +116,7 @@ if(speed == 0)
             <kind>1</kind>
             <string>particle(x,y,random_range(5,10),e_explosion);
 score += 200;
+//shake(room_speed/4,2);
 instance_destroy();
 </string>
           </argument>

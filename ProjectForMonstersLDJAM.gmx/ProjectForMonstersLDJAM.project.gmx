@@ -57,6 +57,7 @@
     <script>scripts\mousedir.gml</script>
     <script>scripts\particle.gml</script>
     <script>scripts\menu_control.gml</script>
+    <script>scripts\shake.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\font</font>
@@ -81,6 +82,7 @@
       <object>objects\movie_intro</object>
       <object>objects\logo</object>
     </objects>
+    <object>objects\e_screenshake</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\r_intro</room>
